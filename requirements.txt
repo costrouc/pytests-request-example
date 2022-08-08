@@ -1,0 +1,4 @@
+# development
+requests
+pytest
+yarl
