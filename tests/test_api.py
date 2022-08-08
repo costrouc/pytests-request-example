@@ -5,6 +5,20 @@ import yarl
 
 GITHUB_BASE_API = yarl.URL('https://api.github.com')
 
+# first read about a GET vs. POST vs. PUT vs... request
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods in general
+# GET requests are most common and mean "read" typically are methods
+# that do not change state of the server e.g. "list all users", "get
+# current user". POST and PUT modify the state of the server such as
+# "create new user", "add a post".
+# POST -> "Create item"
+# GET -> "Read item(s)"
+# PUT -> "Update item"
+# DELETE -> "Delete item"
+# This is where the term "CRUD" comes from in REST APIs
+# https://developer.mozilla.org/en-US/docs/Glossary/CRUD
+# For the most part all REST APIs should follow these "conventions"
+# though there are always good reasons to break these rules.
 
 def test_github_get_zen(client):
     # make a GET http request to api.github.com/zen
