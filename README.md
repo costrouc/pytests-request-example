@@ -37,3 +37,6 @@ pytest    # normal usage
 pytest -s # show all print statements output within tests
 pytest -x # stop the tests on the first one that fails
 ```
+
+Any commit that you make back to the github repo will automatically
+trigger github-actions (CI) to run the tests.
